@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pdfocrlearning"
+version = "1.0.0"
+description = "To learn ocf pdf document using Python"
+authors = ["Sharizan Redzuan <sharizan_81@yahoo.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+my_script = "pdfocrlearning.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+"pdfminer.six" = "^20231228"
+pymupdf = "^1.23.21"
+pillow = "^10.2.0"
+tabula-py = "^2.9.0"
+pandas = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
